@@ -1,6 +1,19 @@
 <div class="w-100">
     <div class="container">
         <p>Hello World!</p>
-        <app-rooms></app-rooms>
+
+        <div [ngSwitch]="role">
+            <div *ngSwitchCase="'User'">
+                Welcome User!
+            </div>
+            <div *ngSwitchCase="'Admin'">
+                Welcome Admin
+            </div>
+            <div *ngSwitchDefault>
+                You are not authorized to view this page!
+            </div>
+
+            <app-rooms></app-rooms>
+        </div>
     </div>
 </div>
