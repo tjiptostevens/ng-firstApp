@@ -1,10 +1,11 @@
-<div class="w-100">
+<div class="w-100" style="background: white;">
     <div class="container" style="display:flex; flex-direction: row; justify-content: space-between;">
-        <div class="__logo"><img src="../../assets/logo.png" alt="logo" height="50px" /></div>
+        <div class="__logo"><img src="/assets/logo.png" alt="logo" height="50px" /></div>
         <div class="__linkcontainer" style="display:flex; flex-direction: row; justify-content: space-around;">
-            <div class="__link">HOME</div>
+            <div class="__link" (click)="goToHome()">HOME</div>
             <div class="__link">ABOUT</div>
             <div class="__link">CONTACT</div>
+            <div class="__link" (click)="logout()">LOGOUT</div>
         </div>
     </div>
 </div>

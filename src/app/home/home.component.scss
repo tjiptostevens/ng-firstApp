@@ -1,0 +1,23 @@
+.__homecontainer {
+    display: flex;
+    .__allmovies {
+        width: 75%;
+        font-family: "roboto", sans-serif;
+        padding: 20px 40px;
+        .__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+                text-transform: uppercase;
+                font-weight: bold
+            }
+            .__viewall {
+                cursor: pointer;
+            }
+        }
+    }
+    .__popularmovies {
+        width: 25%;
+    }
+}
