@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
-
   constructor(private router: Router) { }
   login (usr:string,pwd:String){
     if (usr === 'root' && pwd === 'admin') {
