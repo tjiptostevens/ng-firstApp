@@ -6,7 +6,9 @@ import GetData from '../infrastructure/getData';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent {
+
   constructor(){}
 getTrendingMovies(){
 

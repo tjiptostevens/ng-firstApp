@@ -14,7 +14,7 @@ const GetData = async(url:string) => {
         })
         isLoading = false
         error = null
-        data= await data.data
+        console.log(data)
       } catch (err) {
         if (axios.isAxiosError(err)) {
           console.log('error message: ', err)
